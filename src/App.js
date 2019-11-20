@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src={logo} alt="site logo" className="site-logo" />
         <h1 className="App-title">{ timelineData.person }'s social media feed</h1>
       </header>
       <main className="App-main">
