@@ -4,7 +4,7 @@ import './InteractionButtons.css';
 const InteractionButtons = (props) => {
   const buttons = props.buttons.map((icon, i) => {
     return (
-      <button className="button">{icon}</button>
+      <button className="button" key={ i }>{icon}</button>
     );
   });
 
