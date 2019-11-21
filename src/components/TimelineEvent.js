@@ -14,7 +14,7 @@ const TimelineEvent = (props) => {
     <article className="timeline-event">
       <p className="event-person">{props.post.person}</p>
       <p className="event-status">{props.post.status}</p>
-      <p className="event-time"><Timestamp time={props.post.timestamp} /></p>
+      <p className="event-time"><Timestamp time={props.post.timeStamp} /></p>
       <p className="event-buttons"><InteractionButtons buttons={buttonIcons}/></p>
     </article>
   );
