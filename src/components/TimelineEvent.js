@@ -11,12 +11,14 @@ const TimelineEvent = (props) => {
   ]
   
   return (
-    <article className="timeline-event">
-      <p className="event-person">{props.post.person}</p>
-      <p className="event-status">{props.post.status}</p>
-      <p className="event-time"><Timestamp time={props.post.timestamp} /></p>
-      <p className="event-buttons"><InteractionButtons buttons={buttonIcons}/></p>
-    </article>
+    <div className="timeline-event-wrapper">
+      <div className="interaction-buttons"><InteractionButtons buttons={buttonIcons}/></div>
+      <article className="timeline-event">
+        <p className="event-person">{props.post.person}</p>
+        <p className="event-status">{props.post.status}</p>
+        <p className="event-time"><Timestamp time={props.post.timestamp} /></p>
+      </article>
+    </div>
   );
 }
 
