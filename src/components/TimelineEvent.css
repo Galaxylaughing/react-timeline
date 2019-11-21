@@ -40,6 +40,7 @@
 .timeline-event-wrapper {
   display: grid;
   grid-template-columns: 1fr 10fr;
+  margin-left: -3rem;
 }
 
 .interaction-buttons {
