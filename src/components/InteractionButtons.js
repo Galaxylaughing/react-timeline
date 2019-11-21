@@ -9,7 +9,7 @@ const InteractionButtons = (props) => {
   });
 
   return (
-    <div>{buttons}</div>
+    <div className="interaction-buttons">{buttons}</div>
   );
 };
 

@@ -12,7 +12,7 @@ const TimelineEvent = (props) => {
   
   return (
     <div className="timeline-event-wrapper">
-      <div className="interaction-buttons"><InteractionButtons buttons={buttonIcons}/></div>
+      <InteractionButtons buttons={buttonIcons}/>
       <article className="timeline-event">
         <p className="event-person">{props.post.person}</p>
         <p className="event-status">{props.post.status}</p>
